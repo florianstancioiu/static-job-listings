@@ -9,9 +9,11 @@ const App = () => {
       <Header />
       <main className="px-6">
         <Filters />
-        {availableJobs.map((job) => (
-          <Job key={job.id} job={job} />
-        ))}
+        <div className="md:grid grid-cols-2 gap-x-4">
+          {availableJobs.map((job) => (
+            <Job key={job.id} job={job} />
+          ))}
+        </div>
       </main>
     </>
   );
