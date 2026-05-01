@@ -1,3 +1,4 @@
+import Pill from "../UI/Pill/Pill";
 import Button from "../UI/Button/Button";
 
 export type JobProps = {
@@ -34,21 +35,23 @@ const Job = ({ job }: JobProps) => {
     tools,
   } = job;
 
-  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-4 mb-14 px-4 py-4 pt-0 rounded shadow-md bg-white`;
+  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded shadow-md bg-white`;
 
   return (
     <article className={articleClasses}>
       <div>
-        <div className="mb-4 border-b border-[#979797]">
+        <div className="mb-4 border-b border-gray-300">
           <img
             src={logo}
             alt={`${position} at ${company}`}
             className="w-12 h-12 rouded-full relative -top-6 -mb-3"
           />
-          <div className="mb-2">
+          <div className="mb-2 flex gap-x-2 items-center">
             <p className="text-green-400 font-bold text-sm leading-[150%] tracking-[-0.15px]">
               {company}
             </p>
+            {isNew && <Pill>New!</Pill>}
+            {featured && <Pill bgColor="bg-green-900">Featured</Pill>}
           </div>
           <h2 className="mb-2 font-bold text-base leading-[150%] tracking-[-0.15px] text-green-900">
             {position}
