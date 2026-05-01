@@ -35,7 +35,7 @@ const Job = ({ job }: JobProps) => {
     tools,
   } = job;
 
-  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded shadow-md bg-white`;
+  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded-md shadow-md bg-white`;
 
   return (
     <article className={articleClasses}>
