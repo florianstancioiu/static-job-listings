@@ -73,9 +73,9 @@ Users should be able to:
 
 ## Daily summaries
 
-| Date          | Time Spent | Summary                       |
-| ------------- | ---------- | ----------------------------- |
-| May 1st, 2026 | 2.5 hours  | I worked on the mobile design |
-| May 3rd, 2026 | 2.5 hours  | I worked on the mobile design |
+| Date          | Time Spent | Summary                                                                   |
+| ------------- | ---------- | ------------------------------------------------------------------------- |
+| May 1st, 2026 | 2.5 hours  | I worked on the mobile design                                             |
+| May 3rd, 2026 | 2.5 hours  | I worked on the desktop design and I implemented the filter functionality |
 
 _Total time spent working on the project:_ **5 hours**
