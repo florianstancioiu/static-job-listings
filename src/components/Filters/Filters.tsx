@@ -7,8 +7,8 @@ const Filters = () => {
   return (
     <>
       {filters.length > 0 && (
-        <section className="py-4 px-6 bg-white rounded-[5px] flex justify-between -mt-23 w-full mb-10">
-          <div className="flex gap-2 flex-wrap">
+        <section className="py-4 px-6 bg-white rounded-[5px] flex justify-between -mt-23 w-full mb-12 drop-shadow-lg/15 drop-shadow-green-600">
+          <div className="flex gap-4 flex-wrap">
             {filters.map((filter) => (
               <FilterBtn
                 key={filter.id}
