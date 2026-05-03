@@ -39,32 +39,34 @@ const Job = ({ job }: JobProps) => {
 
   const { onAddFilter } = useFiltersContext();
 
-  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded-md shadow-md bg-white`;
+  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded-md shadow-md bg-white xl:px-10 xl:py-8`;
 
   return (
     <article className={articleClasses}>
-      <div>
-        <div className="mb-4 border-b border-gray-300">
+      <div className="xl:flex xl:justify-between xl:items-center">
+        <div className="mb-4 border-b border-gray-300 xl:border-b-0 xl:mb-0 xl:flex">
           <img
             src={logo}
             alt={`${position} at ${company}`}
-            className="w-12 h-12 rouded-full relative -top-6 -mb-3"
+            className="w-12 h-12 rounded-full relative -top-6 -mb-3 xl:top-0 xl:mb-0 xl:w-22 xl:h-22 xl:mr-6"
           />
-          <div className="mb-2 flex gap-x-2 items-center">
-            <p className="text-green-400 font-bold text-sm leading-[150%] tracking-[-0.15px]">
-              {company}
-            </p>
-            {isNew && <Pill>New!</Pill>}
-            {featured && <Pill bgColor="bg-green-900">Featured</Pill>}
+          <div>
+            <div className="mb-2 flex gap-x-2 items-center">
+              <p className="text-green-400 font-bold text-sm leading-[150%] tracking-[-0.15px] xl:text-lg">
+                {company}
+              </p>
+              {isNew && <Pill>New!</Pill>}
+              {featured && <Pill bgColor="bg-green-900">Featured</Pill>}
+            </div>
+            <h2 className="mb-2 font-bold text-base leading-[150%] tracking-[-0.15px] text-green-900 hover:text-green-400 xl:text-[22px] cursor-pointer">
+              {position}
+            </h2>
+            <ul className="flex gap-x-5 mb-4 items-center text-gray-400 list-disc text-base font-medium leading-[150%] tracking-[-0.15px] xl:mb-0 xl:text-lg">
+              <li className="list-none h-5">{postedAt}</li>
+              <li className="h-6">{contract}</li>
+              <li className="h-6">{location}</li>
+            </ul>
           </div>
-          <h2 className="mb-2 font-bold text-base leading-[150%] tracking-[-0.15px] text-green-900 hover:text-green-400">
-            {position}
-          </h2>
-          <ul className="flex gap-x-5 mb-4 items-center text-gray-400 list-disc text-base font-medium leading-[150%] tracking-[-0.15px]">
-            <li className="list-none h-5">{postedAt}</li>
-            <li className="h-6">{contract}</li>
-            <li className="h-6">{location}</li>
-          </ul>
         </div>
         <ul className="flex gap-2 max-w-full flex-wrap">
           <li>
