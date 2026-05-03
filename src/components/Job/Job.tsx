@@ -1,5 +1,6 @@
 import Pill from "../UI/Pill/Pill";
 import Button from "../UI/Button/Button";
+import { useFiltersContext } from "../../store/FiltersContext";
 
 export type JobProps = {
   job: {
@@ -21,6 +22,7 @@ export type JobProps = {
 
 const Job = ({ job }: JobProps) => {
   const {
+    id,
     company,
     logo,
     isNew,
@@ -34,6 +36,8 @@ const Job = ({ job }: JobProps) => {
     languages,
     tools,
   } = job;
+
+  const { onAddFilter } = useFiltersContext();
 
   const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded-md shadow-md bg-white`;
 
@@ -64,19 +68,55 @@ const Job = ({ job }: JobProps) => {
         </div>
         <ul className="flex gap-2 max-w-full flex-wrap">
           <li>
-            <Button>{role}</Button>
+            <Button
+              onClick={() =>
+                onAddFilter({ id: `${id}_${role}`, title: role, type: "role" })
+              }
+            >
+              {role}
+            </Button>
           </li>
           <li>
-            <Button>{level}</Button>
+            <Button
+              onClick={() =>
+                onAddFilter({
+                  id: `${id}_${level}`,
+                  title: level,
+                  type: "level",
+                })
+              }
+            >
+              {level}
+            </Button>
           </li>
           {tools.map((tool) => (
             <li key={tool}>
-              <Button>{tool}</Button>
+              <Button
+                onClick={() =>
+                  onAddFilter({
+                    id: `${id}_${tool}`,
+                    title: tool,
+                    type: "tool",
+                  })
+                }
+              >
+                {tool}
+              </Button>
             </li>
           ))}
           {languages.map((lang) => (
             <li key={lang}>
-              <Button>{lang}</Button>
+              <Button
+                onClick={() =>
+                  onAddFilter({
+                    id: `${id}_${lang}`,
+                    title: lang,
+                    type: "lang",
+                  })
+                }
+              >
+                {lang}
+              </Button>
             </li>
           ))}
         </ul>

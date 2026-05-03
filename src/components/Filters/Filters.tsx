@@ -1,5 +1,37 @@
+import FilterBtn from "../UI/FilterBtn/FilterBtn";
+import { useFiltersContext } from "../../store/FiltersContext";
+
 const Filters = () => {
-  return <section></section>;
+  const { filters, onRemoveFilter, onClear } = useFiltersContext();
+
+  return (
+    <>
+      {filters.length > 0 && (
+        <section className="py-4 px-6 bg-white rounded-[5px] flex justify-between -mt-23 w-full mb-10">
+          <div className="flex gap-2 flex-wrap">
+            {filters.map((filter) => (
+              <FilterBtn
+                key={filter.id}
+                id={filter.id}
+                title={filter.title}
+                type={filter.type}
+                onRemove={(id) => onRemoveFilter(id)}
+              />
+            ))}
+          </div>
+          <div className="grid place-content-center">
+            <button
+              onClick={() => onClear()}
+              type="button"
+              className="text-green-400 font-bold cursor-pointer"
+            >
+              Clear
+            </button>
+          </div>
+        </section>
+      )}
+    </>
+  );
 };
 
 export default Filters;
