@@ -121,14 +121,13 @@ Describe how you used AI tools (if any) during this project. This helps demonstr
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [Gustavo Sanchez](https://www.frontendmentor.io/solutions/job-listings-with-filtering-solution-0jkb7q0x9d) - I used Gustavo's way of filtering the Jobs, I used the 2 functions inside `src/utils/filterJobs.ts`
 
 ## Daily summaries
 
 | Date          | Time Spent | Summary                       |
 | ------------- | ---------- | ----------------------------- |
 | May 1st, 2026 | 2.5 hours  | I worked on the mobile design |
+| May 3rd, 2026 | 2.5 hours  | I worked on the mobile design |
 
 _Total time spent working on the project:_ **2.5 hours**
