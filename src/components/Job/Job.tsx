@@ -39,7 +39,7 @@ const Job = ({ job }: JobProps) => {
 
   const { onAddFilter } = useFiltersContext();
 
-  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded-md shadow-md bg-white xl:px-10 xl:py-8`;
+  const articleClasses = `${featured ? "border-green-400" : "border-transparent"} border-l-5 mb-14 px-4 py-4 pt-0 rounded-md shadow-md bg-white xl:px-10 xl:py-8 xl:mb-6`;
 
   return (
     <article className={articleClasses}>
