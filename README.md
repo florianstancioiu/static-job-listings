@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- URL: [https://florianstancioiu.github.io/static-job-listings/](https://florianstancioiu.github.io/static-job-listings/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-job-listings-with-react-and-typescript-XEpvUaOCwr](https://www.frontendmentor.io/solutions/responsive-job-listings-with-react-and-typescript-XEpvUaOCwr)
 
 ## My process
 
@@ -78,4 +78,4 @@ Users should be able to:
 | May 1st, 2026 | 2.5 hours  | I worked on the mobile design |
 | May 3rd, 2026 | 2.5 hours  | I worked on the mobile design |
 
-_Total time spent working on the project:_ **2.5 hours**
+_Total time spent working on the project:_ **5 hours**
