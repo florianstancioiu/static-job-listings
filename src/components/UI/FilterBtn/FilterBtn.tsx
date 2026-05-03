@@ -15,7 +15,7 @@ const FilterBtn = ({ id, title, onRemove }: FilterBtnProps) => {
         {title}
       </button>
       <div className="w-8 h-8 grid place-content-center uppercase font-bold text-white bg-green-400 rounded-tr rounded-br cursor-pointer group-hover:bg-green-900">
-        <img src="/public/images/icon-remove.svg" alt="" />
+        <img src="./public/images/icon-remove.svg" alt="" />
       </div>
     </div>
   );
