@@ -57,7 +57,7 @@ const Job = ({ job }: JobProps) => {
             {isNew && <Pill>New!</Pill>}
             {featured && <Pill bgColor="bg-green-900">Featured</Pill>}
           </div>
-          <h2 className="mb-2 font-bold text-base leading-[150%] tracking-[-0.15px] text-green-900">
+          <h2 className="mb-2 font-bold text-base leading-[150%] tracking-[-0.15px] text-green-900 hover:text-green-400">
             {position}
           </h2>
           <ul className="flex gap-x-5 mb-4 items-center text-gray-400 list-disc text-base font-medium leading-[150%] tracking-[-0.15px]">
