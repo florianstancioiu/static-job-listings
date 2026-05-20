@@ -48,7 +48,7 @@ const Job = ({ job }: JobProps) => {
           <img
             src={logo}
             alt={`${position} at ${company}`}
-            className="w-12 h-12 rounded-full relative -top-6 -mb-3 xl:top-0 xl:mb-0 xl:w-22 xl:h-22 xl:mr-6"
+            className="size-12 rounded-full relative -top-6 -mb-3 xl:top-0 xl:mb-0 xl:size-22 xl:mr-6"
           />
           <div>
             <div className="mb-2 flex gap-x-2 items-center">
