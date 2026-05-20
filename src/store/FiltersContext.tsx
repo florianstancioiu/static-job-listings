@@ -31,7 +31,7 @@ export const FiltersContextProvider = ({
       return;
     }
 
-    setFilters([...filters, filter]);
+    setFilters((prevFilters) => [...prevFilters, filter]);
   };
 
   const onRemoveFilter = (id: string) => {
